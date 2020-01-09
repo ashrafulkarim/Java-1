@@ -52,6 +52,10 @@ class Box
 	{
 		System.out.println("Volume print by volume method: "+volume());
 	}
+	
+	void changeIt(Box box){
+		box.width = 100;
+	}
 
 }
 
@@ -82,6 +86,11 @@ class BoxDemo9
 		cube.setName("Cube");
 		cube.print();
 		cube.printVolume();
+		
+		cube.changeIt(mybox2);
+		mybox2.print();
+		mybox2.printVolume();
+		
 		
 		
 	}
